@@ -11,7 +11,7 @@
 
 ### 直接使用（推荐）
 直接下载最新版本：
-- 访问 [Releases](https://github.com/your-repo/waterctl_tauri/releases) 页面
+- 访问 [Releases](https://github.com/E7G/Waterctl_Tauri/releases) 页面
 - 选择对应平台的版本下载
 - 解压后即可使用
 - 说明：
