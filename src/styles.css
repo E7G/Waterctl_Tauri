@@ -40,3 +40,124 @@ body {
   50% { opacity: 0.5; }
   100% { opacity: 1; }
 }
+
+/* 设置链接样式 */
+.settings-link {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.settings-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.settings-link:visited {
+  color: #6f42c1;
+}
+
+/* 设置对话框样式 */
+.settings-section {
+  margin-bottom: 24px;
+}
+
+.settings-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+.settings-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.settings-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.settings-group-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+.settings-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.settings-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.settings-sublabel {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.settings-number {
+  width: 120px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.settings-number:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.settings-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.settings-checkbox-label input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* 对话框内容区域样式 */
+#settings-dialog > div {
+  scrollbar-width: thin;
+  scrollbar-color: #ddd #f5f5f5;
+}
+
+#settings-dialog > div::-webkit-scrollbar {
+  width: 6px;
+}
+
+#settings-dialog > div::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+#settings-dialog > div::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 3px;
+}
