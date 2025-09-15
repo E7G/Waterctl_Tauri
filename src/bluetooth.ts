@@ -46,7 +46,7 @@ let pendingTimeoutMessage: number; // if we don't get a response in time, we sho
 let countdown: CountdownController; //prepare for the countdown
 
 async function writeValue(value: Uint8Array) {
-  const msg = "TXD: " + bufferToHexString(value.buffer);
+  const msg = "TXD: " + bufferToHexString(value.buffer as ArrayBuffer);
   log(msg);
   await send(TXD_UUID, value);
 }
@@ -149,7 +149,7 @@ const MAX_DUPLICATE_COUNT = 2;
 
 async function handleRxdData(data: Uint8Array) {
   // 将数据转换为字符串，用于作为Map的键
-  const dataKey = bufferToHexString(data.buffer);
+  const dataKey = bufferToHexString(data.buffer as ArrayBuffer);
   // 获取当前数据的重复次数
   const currentCount = recentDataMap.get(dataKey) || 0;
 
@@ -167,7 +167,7 @@ async function handleRxdData(data: Uint8Array) {
   }, TIMEOUT_CONFIG.DATA_CLEANUP_DELAY);
 
   //console.log("RXD: \ntype: "+typeof(data)+" \ncontent: " + data);
-  log("RXD: " + bufferToHexString(data.buffer));
+  log("RXD: " + bufferToHexString(data.buffer as ArrayBuffer));
   // const dType = data[3];
 
   try {
@@ -212,7 +212,7 @@ async function handleRxdData(data: Uint8Array) {
         break;
       case 0xAE:
         clearTimeout(pendingStartEpilogue);
-        await writeValue(await makeUnlockResponse(data.buffer, bluetoothdevice.name!));
+        await writeValue(await makeUnlockResponse(data.buffer as ArrayBuffer, bluetoothdevice.name!));
         break;
       case 0xAF:
         switch (data[5]) {
