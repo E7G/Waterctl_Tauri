@@ -15,7 +15,7 @@
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "@tauri-apps/cli": "^2.4.0",
     "typescript": "^5.8.2",
-    "vite": "^5.4.18",
+    "vite": "^5.4.21",
     "vite-plugin-html": "^3.2.2",
     "vite-plugin-singlefile": "^2.2.0",
     "vite-plugin-tauri": "^4.0.0",
