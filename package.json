@@ -15,11 +15,11 @@
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "@tauri-apps/cli": "^2.4.0",
     "typescript": "^5.8.2",
-    "vite": "^6.4.2",
+    "vite": "^6.4.3",
     "vite-plugin-html": "^3.2.2",
     "vite-plugin-singlefile": "^2.2.0",
     "vite-plugin-tauri": "^4.0.0",
-    "vitest": "^2.1.9",
+    "vitest": "^4.1.0",
     "internal-ip": "^8.0.0",
     "wabt": "^1.0.37"
   },
