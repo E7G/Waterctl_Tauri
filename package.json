@@ -19,7 +19,7 @@
     "vite-plugin-html": "^3.2.2",
     "vite-plugin-singlefile": "^2.2.0",
     "vite-plugin-tauri": "^4.0.0",
-    "vitest": "^4.1.0",
+    "vitest": "^5.0.0",
     "internal-ip": "^8.0.0",
     "wabt": "^1.0.37"
   },
